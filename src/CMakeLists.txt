@@ -8,4 +8,5 @@ FetchContent_Declare(fmt
 
 FetchContent_MakeAvailable(fmt)
 
+target_include_directories(jump-all-but-one-game PRIVATE ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(jump-all-but-one-game PRIVATE fmt::fmt)
